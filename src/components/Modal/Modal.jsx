@@ -14,7 +14,7 @@ const Modal = (props) => {
             <h3 className="font-bold text-lg pb-2">{tool_name}</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 md:items-start gap-10 py-4">
-            <div className="border border-red-500 rounded bg-red-50 py-4 px-2">
+            <div className="border border-red-500 rounded bg-red-50 py-4 px-2 order-2 md:order-1">
               <h3 className="text-base font-semibold">
                 {description ? description : "No Description Found!"}
               </h3>
@@ -73,7 +73,7 @@ const Modal = (props) => {
                 <p>{accuracy && accuracy.description ? accuracy.description : "No Accuracy Status!"}</p>
               </div>
             </div>
-            <div className="border p-3 rounded">
+            <div className="border p-3 rounded order-1 md:order-2">
               <div className="relative">
                 <img className="w-full h-full" src={image_link &&  image_link[0]} alt={tool_name} />
                 <div className={`absolute top-1 right-1 bg-red-500 text-white p-2 rounded ${accuracy?.score !== null ? "block" : "hidden"}`}>
