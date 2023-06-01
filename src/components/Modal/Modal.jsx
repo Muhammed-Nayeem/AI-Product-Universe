@@ -13,7 +13,7 @@ const Modal = (props) => {
           <div className="border-b-2">
             <h3 className="font-bold text-lg pb-2">{tool_name}</h3>
           </div>
-          <div className="grid grid-cols-2 items-start gap-10 py-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 items-start gap-10 py-4">
             <div className="border border-red-500 rounded bg-red-50 py-4 px-2">
               <h3 className="text-base font-semibold">
                 {description ? description : "No Description Found!"}
