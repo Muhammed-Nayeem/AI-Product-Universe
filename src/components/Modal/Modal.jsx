@@ -44,7 +44,7 @@ const Modal = (props) => {
                   </p>
                 </div>
               </div>
-              <div className="flex justify-between">
+              <div className="flex flex-wrap flex-col md:flex-nowrap md:flex-row md:justify-between">
                 <div className="text-left">
                   <h3 className="text-lg text-left font-semibold">Features</h3>
                   <ul className="list-disc px-5">
