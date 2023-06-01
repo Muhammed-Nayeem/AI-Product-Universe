@@ -18,7 +18,7 @@ const Modal = (props) => {
               <h3 className="text-base font-semibold">
                 {description ? description : "No Description Found!"}
               </h3>
-              <div className="flex justify-between">
+              <div className="flex flex-wrap flex-col md:flex-row md:flex-nowrap justify-between">
                 <div className="text-green-600 text-center my-4 p-3 bg-white border rounded">
                   <p className="text-sm">
                     {pricing ? pricing[0].price : "Free Of Cost/"}
