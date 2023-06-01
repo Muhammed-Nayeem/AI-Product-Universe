@@ -64,7 +64,7 @@ const Tools = () => {
               <Button>Sort By Date</Button>
             </span>
           </article>
-          <div className="grid grid-cols-3 gap-5 pb-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 pb-5">
             {toolsData?.slice(0, showAll ? 12 : 6).map((toolData) => (
               <Tool
                 key={toolData.id}
